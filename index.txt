@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns:wb="http://open.weibo.com/wb">
+<head>
+	<meta charset="UTF-8">
+	<title>中国棉花协会</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" Content="IE=Edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="/app/static/css/index.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="/app/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/app/static/css/mod.css"> -->
+	<script type="text/javascript" src="/app/static/js/jQuery_latest.min.js" ignoreapd="false"></script>
+	<script type="text/javascript" src="/app/static/js/jQuery_tabs.js" ignoreapd="false"></script>
+	<script type="text/javascript" src="/app/static/js/jQuery_picFocus.js" ignoreapd="false" charset="utf-8"></script>
+	<script type="text/javascript" src="/app/static/js/xq_ctrl.js"></script>
+
+	<script type="text/javascript" src="/app/static/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="/app/static/js/dhdate.js"></script>	
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script type="text/javascript" ignoreapd="false">
+		jQuery(document).ready(function($){
+			$('#Tabs_01').eol_Tabs({tabs:"tabs_01",currentClass:'tag_01',event:'mouseover'});
+			$('#Tabs_02').eol_Tabs({tabs:"tabs_02",currentClass:'tag_02',event:'mouseover'});
+			$('#Tabs_03').eol_Tabs({tabs:"tabs_03",currentClass:'tag_03',event:'mouseover'});
+			$('#Tabs_04').eol_Tabs({tabs:"tabs_04",currentClass:'tag_04',event:'mouseover'});
+			$('#Tabs_05').eol_Tabs({tabs:"tabs_05",currentClass:'tag_05',event:'mouseover'});
+		})
+	</script>-->
+	<script type="text/javascript" ignoreapd="false">
+		function check_search(){
+			var keyword = document.getElementById("keyword_va").value;
+			if (keyword == "" || keyword == "请输入关键字"){
+				alert("请输入关键字");
+				return false;
+			}
+			else{
+				searchform.submit();
+			}
+		}
+		// function trim(str){  //删除左右两端的空格
+		// 	return str.replace(/(^\s*)|(\s*$)/g, "");
+		// }
+	</script>
+<body>
+<!-- 头部 -->
+<header>
+	<div class="top">
+		<div class="grid container">
+			<div class="left float">
+				<a href="/">首页</a><i class="Vline"></i><a href="#">English</a>
+			</div>
+			<div class="right float search">
+				<form class="right" style="margin:0px; padding:0px;"action="/index/search" name="searchform" target="_top" method="post" >
+					<strong>站内检索</strong>： 
+					<input type="text" value="请输入关键字" name="keyword" id="keyword_va" size="10" onclick='this.value=""' onBlur="if(this.value==''){this.value='请输入关键字'}"/>　
+					<button class="btn" onclick="check_search();"></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="grid container banner">
+		<div class="left float logo">
+			<a href="/"><img src="/app/static/img/logo.jpg" alt="logo"></a>
+		</div>
+		<div class="right float ad1">
+            <a href="http://www.cottontimes.org"><img src="/app/static/img/ad01.jpg" alt="ad01" class="r-img"></a>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="menu container">
+			<em>	
+			<script language="javascript">
+				var d = new Date()
+				var vYear = d.getFullYear()
+				var vMon = d.getMonth() + 1
+				var vDay = d.getDate()
+				var h = d.getHours(); 
+				var m = d.getMinutes(); 
+				var se = d.getSeconds(); 
+				s=vYear+'年'+(vMon<10 ? "0" + vMon : vMon)+"月"+(vDay<10 ? "0"+ vDay : vDay)+'日';
+				document.write(s);
+				</script>
+				<script language="javascript">
+				 document.write(RunGLNL());
+			</script>
+			</em>
+		    <ul>
+		        <li class="first cur"><a href="/">首页</a><i class="Vline"></i></li>
+		        <li ><a href="/index/introDataList/1">协会概况</a><i class="Vline"></i></li>
+		        <li ><a href="/trend">协会动态</a><i class="Vline"></i></li>
+		        <li ><a href="/warning/index" style="color: #ff6600">棉花预警</a><i class="Vline"></i></li>
+		        <li ><a href="/data/index">数据中心</a><i class="Vline"></i></li>
+		        <li ><a href="/advise">棉花资讯</a><i class="Vline"></i></li>
+		        <li  class="point-li"><a href="/trade">行业<i class="point"></i>行规</a><i class="Vline"></i></li>
+		        <li class="last"><a href="http://www.cottontimes.org">中国棉花</a></li>
+		    </ul>
+		</div>
+	</div>
+</header><div class="main container r-div grid">
+    <div class="u8-l-2 trade">
+        <div class="border" style="padding: 10px 17px 54px 17px;*padding: 10px 17px 34px 17px;">
+            <h1 class="title12">最新更新</h1>
+            <div class="grey ul orange-li">
+                <ul>
+                                        <li><a href="/.//app/html/2016/05/13/76400.html">【2016高峰论坛】杨照良：品质和品牌，用“中国棉花”推动产业提升棉花质量</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76399.html">[2016高峰论坛]王建红:关于“开展2015年度中国棉花流通行业调查”情况的说明</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76398.html">5月13日储备棉轮出第二节推出资源1.5万吨</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76397.html">【2016高峰论坛】卢怀玉：提质增效 有效供给</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76396.html">【2016高峰论坛】徐延毅：加快推动互联网+智能物流 提升产业竞争力</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76395.html">【2016高峰论坛】蔡亚军：秉承与创新并举 坚守棉花主阵营</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76394.html">关于储备棉轮出违约情况的公告</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76393.html">【2016高峰论坛】棉绵爱心专项基金微捐通道正式开启</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76391.html">射阳县棉花协会:射阳县套种棉移栽全部结束</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76390.html">5月13日中国棉花价格指数（CC Index）及分省到厂价（图）</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76388.html">5月13日储备棉轮出第一节推出资源1.5万吨</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76387.html">【轮出评述】5月12日实际成交3.23万吨 成交率达到98.99%</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76386.html">【轮出结果】5月12日储备棉实际成交3.23万吨</a><span>2016-05-13</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76389.html">【2016高峰论坛】Adeyemi Achamou Fahala：非洲棉花的品质</a><span>2016-05-12</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76385.html">【2016高峰论坛】Tim Bourgois：国际棉花市场走势</a><span>2016-05-12</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76384.html">【2016高峰论坛】Bruce Atherley：创新将促进棉花需求的增长</a><span>2016-05-12</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/13/76383.html">【2016高峰论坛】肖玉清：新形势下新疆棉花产业发展思路</a><span>2016-05-12</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/12/76382.html">挂牌日报：仓量大增 均价收涨</a><span>2016-05-12</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/12/76381.html">【2016高峰论坛】姚明烨：新形势下更好的发挥储备在棉花调控中的作用</a><span>2016-05-12</span></li>
+                    <span class="slides line"></span>
+                                        <li><a href="/.//app/html/2016/05/12/76380.html">【2016高峰论坛】高勇：中国纺织行业市场分析与前景</a><span>2016-05-12</span></li>
+                    <span class="slides line"></span>
+                                    </ul>
+            </div>
+                <h1><span class="more">共35815条,1791页  <b>1</b>  <a href='/index/news_list/20/2' target='_self'>2</a>  <a href='/index/news_list/20/3' target='_self'>3</a>  <a href='/index/news_list/20/4' target='_self'>4</a>  <a href='/index/news_list/20/2' target='_self'>下一页</a > <a href='/index/news_list/20/1791' target='_self'>尾页</a ></span></h1>        </div>
+    </div>
+</div>
+<div class="footer-con">
+	<div class="bottom">
+		<div class="container">
+			<a href="/index/introDataList/1">关于我们</a><i class="Vline write"></i>
+			<a href="/index/introDataList/17">联系我们</a><i class="Vline write"></i>
+			<a href="#">版权声明</a><i class="Vline write"></i>
+			<a href="#">法律顾问</a>
+			<span>版权所有 中国棉花协会     ICP备案号：京ICP备14039913号</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
