@@ -10,11 +10,11 @@ from scrapy import Request
 
 class ChinaCoottonSpider(Spider):
     name="chinacotton"
-    start_urls=[
+    start_urls = [
         "http://www.china-cotton.org/warning/newContent"
     ]
     allowed_domains=["china-cotton.org"]
-    def __init__(self):
+    def   __init__(self):
         self.f=open('out.txt','wb')
     def parse(self, response):
         #hxs=HtmlXPathSelector(response)
